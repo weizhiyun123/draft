@@ -1,17 +1,7 @@
-# 怎么用 fir
+# 怎么在 fir 上安装应用
 
-## 首先
+## 有两个方法
 
-进入 [fir.im](https://fir.im/) 的官网，注册，随后登录。
+1. 使用手机，打开 Safari 浏览器，在浏览器中输入 `https://fir.im/zvkp`，然后点击网页中的`下载安装`按钮，网页会提醒你是否允许安装应用，点击`允许`。当网页提示`正在安装，请按 Home 键在桌面查看` 的时候，说明应用已经在安装了。这时候回到桌面，就可以找到这个应用了
 
-## 然后
-
-* 这时候网站应该会跳转到 `我的应用` 这里来。**如果没有跳转，可以在主页点击 `应用管理` 来进入以下页面** 
-
-![fir_usage](https://raw.githubusercontent.com/xiongyitian/draft/master/fir_usage.png)
-
-* 然后把我们的 `bike.ipa` 文件拖拽到上传区域（也就是写着`拖拽到这里上传` 的地方）。然后应用就会开始上传，等待上传结束后，页面上会出现一个新的应用。
-
-![fir_usage_new_app](https://raw.githubusercontent.com/xiongyitian/draft/master/fir_usage_new_app.png)
-
-* 点击`预览`就可以跳转到手机下载页面。这时候使用手机扫描二维码就可以开始下载了。**注意：要先把手机的 UDID 添加到开发者账号内**
+2. 在电脑中打开 [https://fir.im/zvkp](https://fir.im/zvkp)，在网页中会显示出一个二维码，使用微信扫描二维码，然后选择`在 Safari 中打开`。接着点击网页中的`下载安装`按钮，同意安装后就会开始下载了。
