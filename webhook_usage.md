@@ -4,7 +4,7 @@
 
 webhook 主要在用户进行 `connect`, `disconnect`, `subscribe`, `unsubscribe` 和 `publish` 的时候添加了可由服务器控制的机制，从而提供控制用户行为以及统计功能。
 
-* 我需要什么来 webhook？
+* 我需要什么来使用 webhook？
 
 要使用 webhook，你需要要有一个接收由我们发起的 post 请求并返回特定数据的服务器。
 
@@ -24,7 +24,7 @@ webhook 主要在用户进行 `connect`, `disconnect`, `subscribe`, `unsubscribe
 }
 ```
 
-* 这时候你可以给`这里也是地址` post 一个回应的 json（如果你只设置了 post-webhook 则不需要向云巴 post 这个 json），云巴会根据你 post 的 json 来决定接下来需要做什么。你需要回复的 json 大概是下面的样子。同样，这个 json 的具体含义我们会在[下一个章节](#hook)进一步说明。
+* 这时候你可以给`这里也是地址` 回应一个 json（如果你只设置了 post-webhook 则不需要向云巴回应 json），云巴会根据你回应的 json 来决定接下来需要做什么。你需要回复的 json 大概是下面的样子。同样，这个 json 的具体含义我们会在[下一个章节](#hook)进一步说明。
 
 ```json
 {
