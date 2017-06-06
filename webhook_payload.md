@@ -1,4 +1,4 @@
-# webhook 中的 json
+# webhook 中你会收到的 json
 
 * 你会从云巴收到的 json 
 
@@ -79,3 +79,23 @@ uid | 云巴的唯一用户标识，详细的说明参考这里[uid 是什么](#
 topic | 正在进行操作的 topic，关于 topic 的介绍可以参考这里[topic 是什么](#hook)
 payload | 用户想要 publish 的消息内容
 message_id | 云巴的唯一消息标识
+
+# webhook 中你回复的 json
+
+* 你需要发送的 json 
+
+你回复的 json 应该是下面的结构：
+
+```json 
+{
+    "enable_original_action":`{bool}`,
+    "extra_action":`{array}`
+}
+```
+
+参数 | 含义
+:--- | :---
+enable\_original_action | 是否保留原来的操作
+extra\_action | 表示需要执行的额外操作，结构为 [{ "action":`String`, "topic":`String` }]，（action 为 `publish` 时，结构为[{ "action":`String`, "topic":`String`, "payload":`String` }]）可以有多项，会按顺序执行
+
+其中 `action` 可以有 `subscribe`，`unsubscribe`和`publish`
